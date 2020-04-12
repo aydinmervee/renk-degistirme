@@ -1,0 +1,49 @@
+<!DOCTYPE html><!--Deklarasyon HTML5 olmak için bu belgeyi(dökümantasyon) tanımlayan -->
+<html lang="en-tr"><!-- HTML sayfasının kök unsurudur. -->
+<head><!--Dökümantasyonun ilgili meta bilgilerini veriri.-->
+<style>
+  #kare {
+     width: 200px;
+     height: 200px;
+     background: yellow;
+  }
+
+</style>
+</head>
+<body style="background-color:powderblue;"><!--Görünür sayfa içerik var.-->
+<!--background-color arka plan rengini ayarlamak içindir.-->
+<h1>KARE DENEMESİ</h1><!--Büyük bir başlık tanımlar-->
+<hr>
+<br>
+
+<p ><button id="btn1" onclick="document.getElementById('id1').style.color = 'black'"  style=background-color:#92000a><h1  style="color:black;">kırmızı buton</h1></button><p/>
+
+<p><button id="btn2"><h2 style="color:black;">beyaz buton</h2></button><p/>
+
+<p><button id="btn3" style=background-color:#30d5c8><h1  id="id1"style="color:black;">Turkuaz buton</h1></button><p/>
+
+  <script>
+
+     var btn1=document.querySelector("#btn1");
+     var btn2=document.querySelector("#btn2");
+     var btn3=document.querySelector("#btn3");
+     var kutu=document.querySelector("#kare");
+
+     btn1.onclick=function(){
+         kare.style.background="#ff0000";
+     }
+
+     btn2.onclick=function(){
+         kare.style.background="#ffffff";
+     }
+
+     btn3.onclick=function(){
+        kare.style.background=" #30d5c8";
+
+     }
+
+ </script>
+
+<div id="kare"></div>
+</body>
+</html>
